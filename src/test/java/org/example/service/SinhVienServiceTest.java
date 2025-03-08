@@ -112,7 +112,7 @@ class SinhVienServiceTest {
         SinhVien sinhVien = new SinhVien("SV1", "Kien", 20, 7, 2, "IT");
         sinhVienService.addSinhVien(sinhVien);
         Exception exception = assertThrows(IllegalArgumentException.class,
-                () -> sinhVienService.updateSinhVien(new SinhVien("SV1", "",20, 8, 4, "IT")));
+                () -> sinhVienService.updateSinhVien(new SinhVien("SV2", "",20, 8, 4, "IT")));
         assertEquals("Tên sinh viên k được trống", exception.getMessage());
     }
 
