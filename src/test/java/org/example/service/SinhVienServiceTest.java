@@ -129,7 +129,7 @@ class SinhVienServiceTest {
         SinhVien sinhVien = new SinhVien("SV1", "Kien", 20, 7, 2, "IT");
         sinhVienService.addSinhVien(sinhVien);
 
-        sinhVienService.deleteSinhVien("SV2");
+        sinhVienService.deleteSinhVien("SV1");
         assertEquals(0, sinhVienService.getAllSinhVien().size());
     }
 
